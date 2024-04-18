@@ -1,0 +1,63 @@
+#skills_page{
+    background-color: #271823;
+    height: 80vh;
+}
+
+#skills_container{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+#skills{
+    background-color: #F0E8E0;
+    position: absolute;
+    height: auto;
+    left: 8vw;
+    top: 0;
+    width: 92vw;
+}
+
+.skill{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: 200px;
+    justify-content: space-between;
+    height: 20vh;
+}
+.skill.open{
+    transition: .7s;
+    padding-bottom: 150px;
+}
+
+.skill .open p{
+    color: red;
+}
+
+.skill:not(:last-child){
+    border-bottom: 2px solid black;
+}
+
+.skill h1{
+    margin-left: 5%;
+    vertical-align: center;
+}
+
+.skill img{
+    height: auto;
+    margin-right: 5%;
+    width: 2%;
+}
+
+.skill img.open{
+    transform: rotate(90deg);
+    transition: .7s;
+}
+
+
+
+
+

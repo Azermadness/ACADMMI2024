@@ -1,0 +1,73 @@
+#eliott_page {
+    margin-top: 100vh;
+    background-color: #FF70B5;
+    margin-left: 8vw;
+}
+.titlefond{
+    color: #F0E8E0;
+    font-size: 200px;
+}
+.visite{
+    display: flex;
+}
+.right{
+    display: flex;
+    justify-content: end;
+}
+.casevide{
+    width: 720px;
+    height: 480px;
+    background-color: #271823;
+}
+.videox{
+    display: flex;
+    justify-content: center;
+    position: relative;    
+}
+#david_cage{
+    width: 180vw;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: visible;
+    animation: ani1 25s linear infinite;
+    z-index: -10;
+}
+.fullteam{
+    display: inline-grid;
+    background-color: #FF70B5;
+    height: 40vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.team{
+    display: flex;
+    width: 16.6vw;
+    border: solid 3px #271823;
+    display: inline-block;
+    font-size: large;
+    align-content: end;
+    padding: 10px;
+}
+.team:not(:nth-child(9n)) {
+    border-right: 3px solid black;
+  }
+.up_nav{
+    margin-top: 3vw;
+    height: 5vw;
+    margin-left: 8vw;
+    align-content: center;
+    justify-content: center;
+    gap: 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes ani1 {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(-180vw);
+    }
+}

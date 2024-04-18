@@ -1,0 +1,46 @@
+#landing_sidebar {
+    background-color: #555;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--sizeSidebar);
+    height: 1000vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sidebar_logo {
+    width: 4vw;
+    height: 4vw;
+    margin-top: 2vw;
+    background-color: #f00;
+}
+
+#sidebar_progress {
+    font-size: 1.5vw;
+    margin-top: 0.5vw;
+    width: 0.15vw;
+    height: calc(1000vh - 6.5vw);
+    background-color: #fff;
+}
+
+#sidebar_newsletter {
+    position: fixed;
+    transform: translateX(-6.5vw) rotate(-90deg) translateX(-17vh);
+    background-color: #555;
+    width: 13vw;
+    text-align: center;
+}
+
+#sidebar_ig {
+    text-align: center;
+    position: fixed;
+    top: 85vh;
+    transform: translateX(-1vw);
+    background-color: #555;
+    width: 3vw;
+    height: 3vw;
+    text-align: center;
+}

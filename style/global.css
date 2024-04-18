@@ -1,0 +1,125 @@
+:root {
+    --colPink : #FF70B5;
+    --colWhite : #F0E8E0;
+    --colBlack : #271823;
+
+    --sizeSidebar : 8vw;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Integral CF Demi';
+    src: url('../font/FONTSPRINGDEMO-IntegralCFDemiBoldRegular.woff2') format('woff2'),
+        url('../font/FONTSPRINGDEMO-IntegralCFDemiBoldRegular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    scrollbar-width: 0;
+    overflow-x: hidden;
+    font-family: 'FONTSPRING DEMO - Integral CF Demi';
+    font-weight: 600;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Separator (Vadim) :*/
+.separator{
+    align-items: center;
+    background-color: var(--colBlack);
+    display: flex;
+    height: 20vh;
+    margin-left: 8vw;
+    width: calc(100vw - var(--sizeSidebar));
+}
+
+.separator.open{
+    margin-top: 150px;
+    transition: .7s;
+}
+
+.separator h1{
+    align-items: center;
+    color: var(--colWhite);
+    font-size: 40px;
+    margin-left: 5%;
+}
+
+/*CTA (Vadim) :*/
+.cta_container{
+    align-items: center;
+    background-color: var(--colPink);
+    display: flex;
+    height: 40vh;
+    justify-content: space-between;
+    margin-left: 8vw;
+    width: calc(100vw - var(--sizeSidebar));
+}
+
+.cta_container .info{
+    margin-left: 10%;
+}
+
+.cta_container .info h1{
+    font-size: 40px;
+}
+
+.cta_container .nav{
+    margin-top: 35px;
+    display: flex;
+    gap: 35px;
+}
+
+.cta_container .nav a{
+    color: black;
+}
+
+.cta_container .logo{
+    margin-right: 10%;
+}
+
+/*Footer (Vadim) :*/
+.footer{
+    align-items: flex-end;
+    background-color: var(--colPink);
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    margin-left: 8vw;
+    position: relative;
+    width: calc(100vw - var(--sizeSidebar));
+}
+
+.footer .info{
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.footer .info h1{
+    font-size: 20px;
+}
+
+.footer .info p{
+    font-size: 16px;
+}
+
+.footer #banniere{
+    position: absolute;
+    right: 10%;
+    top: 7.90%;
+    transform: translate(-50%, -50%);
+}
+
+.footer .logo{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
