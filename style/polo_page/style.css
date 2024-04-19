@@ -1,7 +1,7 @@
 #eliott_page {
     margin-top: 100vh;
-    background-color: #FF70B5;
-    margin-left: 8vw;
+    background-color: var(--colPink);
+    margin-left: var(--sizeSidebar);
 }
 .titlefond{
     color: #F0E8E0;
@@ -41,26 +41,61 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .team{
-    display: flex;
     width: 16.6vw;
     border: solid 3px #271823;
-    display: inline-block;
-    font-size: large;
-    align-content: end;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    font-size: 1.5vw;
+    justify-content: end;
     padding: 10px;
+    background-size: cover;
+    background-position: center;
 }
+
 .team:not(:nth-child(9n)) {
     border-right: 3px solid black;
-  }
-.up_nav{
-    margin-top: 3vw;
-    height: 5vw;
-    margin-left: 8vw;
-    align-content: center;
-    justify-content: center;
-    gap: 120px;
-    display: flex;
-    flex-direction: row;
+}
+
+
+.membrea {
+    background-image: url('../../assets/img/nathan.jpg');
+}
+
+.membreb {
+    background-image: url('../../assets/img/alex.jpg');
+}
+
+.membrec {
+    background-image: url('../../assets/img/romain.jpg');
+}
+
+.membred {
+    background-image: url('../../assets/img/lou-anne.jpg');
+}
+
+.membree {
+    background-image: url('../../assets/img/malo.jpg');
+}
+
+.membref {
+    background-image: url('../../assets/img/vadim.jpg');
+}
+
+.membreg {
+    background-image: url('../../assets/img/enzost.jpg');
+}
+
+.membreh {
+    background-image: url('../../assets/img/alice.jpg');
+}
+
+.membrei {
+    background-image: url('../../assets/img/enzonc.jpg');
+}
+
+.membrej {
+    background-image: url('../../assets/img/alix.jpg');
 }
 
 @keyframes ani1 {

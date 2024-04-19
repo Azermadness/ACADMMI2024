@@ -1,5 +1,5 @@
 #landing_sidebar {
-    background-color: #555;
+    background-color: #271823;
     position: absolute;
     top: 0;
     left: 0;
@@ -22,25 +22,83 @@
     font-size: 1.5vw;
     margin-top: 0.5vw;
     width: 0.15vw;
-    height: calc(1000vh - 6.5vw);
+    height: 0;
     background-color: #fff;
 }
 
 #sidebar_newsletter {
     position: fixed;
-    transform: translateX(-6.5vw) rotate(-90deg) translateX(-17vh);
-    background-color: #555;
+    transform: translateX(-6.5vw) rotate(-90deg) translateX(-100px);
+    background-color: #271823;
     width: 13vw;
+    co
     text-align: center;
 }
 
 #sidebar_ig {
     text-align: center;
     position: fixed;
-    top: 85vh;
+    bottom: 35px;
     transform: translateX(-1vw);
     background-color: #555;
     width: 3vw;
     height: 3vw;
     text-align: center;
+}
+
+.up_nav{
+    color: black;
+    padding: 30px;
+    margin-left: 10vw;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 150px;
+    font-size: x-large;
+    display: flex;
+    flex-direction: row;
+    color: #271823;
+    text-decoration: none;
+}
+
+.up_nav a{
+    color: black;  
+}
+
+.up_nav a:not(:first-child){
+    text-decoration: none; 
+}
+.un_nav:hover{
+    text-decoration: underline;
+}
+
+#landing_dong{
+    height: 100vh;
+    background-color: #FF70B5;
+}
+.logoandtext{
+    margin-left: 14vw;
+}
+.logoheader{
+    width: 580px;
+}
+.txtslogan{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    font-size: x-large;
+}
+.vanillefraise{
+    font-size: 70vh;
+    overflow: visible;
+    white-space: nowrap;
+    margin-left: 10vw;
+    line-height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    
 }

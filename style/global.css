@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Integral CF';
+    src: url('../font/IntegralCF-DemiBold.woff2') format('woff2'),
+        url('../font/IntegralCF-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --colPink : #FF70B5;
     --colWhite : #F0E8E0;
@@ -6,27 +15,17 @@
     --sizeSidebar : 8vw;
 }
 
-@font-face {
-    font-family: 'FONTSPRING DEMO - Integral CF Demi';
-    src: url('../font/FONTSPRINGDEMO-IntegralCFDemiBoldRegular.woff2') format('woff2'),
-        url('../font/FONTSPRINGDEMO-IntegralCFDemiBoldRegular.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-body {
-    scrollbar-width: 0;
-    overflow-x: hidden;
-    font-family: 'FONTSPRING DEMO - Integral CF Demi';
-    font-weight: 600;
-    font-style: normal;
-}
-
 *{
     margin: 0;
     padding: 0;
+}
+
+body {
+    scrollbar-width: 0;
+    font-family: 'Integral CF';
+    overflow-x: hidden;
+    font-weight: 600;
+    font-style: normal;
 }
 
 /*Separator (Vadim) :*/
@@ -41,6 +40,10 @@ body {
 
 .separator.open{
     margin-top: 150px;
+    transition: .7s;
+}
+
+.separator.closed{
     transition: .7s;
 }
 
@@ -111,9 +114,8 @@ body {
 
 .footer #banniere{
     position: absolute;
-    right: 10%;
-    top: 7.90%;
-    transform: translate(-50%, -50%);
+    right: 125px;
+    top: 0;
 }
 
 .footer .logo{
@@ -121,5 +123,15 @@ body {
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
+.footer .logo p{
+    text-align: center;
+}
+
+/*Media queries*/
+@media screen and (max-width: 1200px){
+    .up-nav a{
+        color: red;
+    }
 }

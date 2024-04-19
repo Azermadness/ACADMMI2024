@@ -9,4 +9,8 @@ function stopScroll() {
   clearInterval(intervalId);
 }
 
+function setSideHeight() {
+  
+}
+
 const david_cage = document.querySelector('#david_cage');

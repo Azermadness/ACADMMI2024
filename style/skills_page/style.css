@@ -28,6 +28,10 @@
     justify-content: space-between;
     height: 20vh;
 }
+
+.skill p{
+    display: none;
+}
 .skill.open{
     transition: .7s;
     padding-bottom: 150px;
