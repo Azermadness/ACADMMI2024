@@ -1,40 +1,31 @@
 const skills = document.querySelectorAll('.skill');
 const skills_button = document.querySelectorAll('.skill img');
-const skills_text = document.querySelectorAll('.skill p'); //Texte à utiliser
+const skills_text = document.querySelectorAll('.skill p');
 
 const separator = document.querySelector('.separator');
 
-    skills.forEach(element => {
-        element.addEventListener("click", function(){ 
+skills.forEach(element => {
+    element.addEventListener("click", function(){
+        // Vérifie si l'élément cliqué a déjà la classe 'open'
+        let isOpen = element.classList.contains('open');
+        
+        // Ferme tous les éléments en enlevant la classe 'open' de tous les éléments
+        skills.forEach(skill => {
+            skill.classList.remove('open');
+        });
 
-            separator.classList.toggle('open');
+        // Ferme également tous les boutons de compétences en enlevant la classe 'open'
+        skills_button.forEach(button => {
+            button.classList.remove('open');
+            separator.classList.remove('open');       
 
-            skills[clickedIndex].classList.toggle('open');
+        });
 
-            let clickedIndex = Array.from(skills).indexOf(element);
+        // Si l'élément cliqué n'était pas ouvert, l'ouvre en ajoutant la classe 'open'
+        if (!isOpen) {
+            element.classList.add('open');  
+            separator.classList.add('open');       
+        }
 
-            if(element.classList.contains('open')){
-               element.classList.remove('open');
-            }
-
-            // if(isOpened()){
-            //     skills.forEach(element => {
-            //         element.classList.remove('open');
-            //         skills_button[clickedIndex].classList.remove('open');
-            //     });
-
-            //     skills[clickedIndex].classList.toggle('open');
-            //     skills_button[clickedIndex].classList.toggle('open');
-            //     console.log("Contenu ouvert détecté");
-            // }
-            // else{
-            //     skills[clickedIndex].classList.toggle('open');
-            //     skills_button[clickedIndex].classList.toggle('open');
-            //     console.log("Contenu fermé !");
-            // }
-        })
     });
-
-function isOpened(){
-    return Array.from(skills).some(element => element.classList.contains('open'));
-}
+});

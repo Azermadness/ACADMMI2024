@@ -7,6 +7,10 @@
     font-display: swap;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root {
     --colPink : #FF70B5;
     --colWhite : #F0E8E0;
@@ -21,6 +25,7 @@
 }
 
 body {
+    background-color: var(--colblack);
     scrollbar-width: 0;
     font-family: 'Integral CF';
     overflow-x: hidden;
@@ -39,7 +44,7 @@ body {
 }
 
 .separator.open{
-    margin-top: 150px;
+    margin-top: 175px; /*A changer ici*/
     transition: .7s;
 }
 
@@ -129,9 +134,4 @@ body {
     text-align: center;
 }
 
-/*Media queries*/
-@media screen and (max-width: 1200px){
-    .up-nav a{
-        color: red;
-    }
-}
+/* Media query pour cibler l'ID #sidebar */
